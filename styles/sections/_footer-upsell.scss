@@ -1,0 +1,28 @@
+.section-footer-upsell {
+  display: flex;
+  align-items: flex-end;
+  padding: 0 0 0 2rem;
+  border-top: 2px solid var(--footer-upsell-border-color);
+  border-bottom: 2px solid var(--footer-upsell-border-color);
+
+  .section-footer-upsell-text {
+    margin: 4rem 0;
+  }
+
+  .footer-desktop-upsell-image {
+    display: none;
+  }
+  @media (min-width: 90rem) {
+    width: 90rem;
+    margin: 7rem auto;
+    gap: 10rem;
+    .footer-desktop-upsell-image {
+      display: block;
+      padding: 4rem 0 0 0;
+    }
+
+    .footer-mobile-upsell-image {
+      display: none;
+    }
+  }
+}

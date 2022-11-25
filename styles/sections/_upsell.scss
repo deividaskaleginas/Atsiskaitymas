@@ -1,0 +1,17 @@
+.section-upsell {
+  margin: 4rem 0 0 0;
+  padding: 7rem 2rem 2rem 2rem;
+  background: rgb(255, 57, 152);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 57, 152, 0.913624824929972) 0%,
+    rgba(255, 129, 57, 0.9192270658263305) 100%
+  );
+  color: var(--dark-color);
+
+  @media (min-width: 90rem) {
+    width: 90rem;
+    margin: 0 auto;
+    border-radius: 1.5625rem;
+  }
+}

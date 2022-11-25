@@ -1,0 +1,60 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (min-width: 90rem) {
+    max-width: 90rem;
+    margin: 0 auto;
+  }
+
+  .logo {
+    padding: 2rem;
+    a {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      h2 {
+        font-weight: 400;
+        font-size: 1.75rem;
+        line-height: 2.1rem;
+        letter-spacing: 5%;
+        font-style: normal;
+        color: var(--dark-color);
+        font-family: "Varela Round", sans-serif;
+      }
+    }
+  }
+  nav {
+    ul {
+      display: none;
+    }
+    .burger-menu {
+      padding: 0 2rem 0 0;
+      svg {
+        fill: var(--grey-burger-menu-color);
+        width: 1.5rem;
+        height: 1.375rem;
+      }
+    }
+    @media (min-width: 90rem) {
+      ul {
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+        a {
+          font-weight: 400;
+          font-size: 1.25rem;
+          color: var(--hero-paragraph-dark-color);
+        }
+
+        a:hover {
+          color: var(--pink-color);
+        }
+      }
+      .burger-menu {
+        display: none;
+      }
+    }
+  }
+}

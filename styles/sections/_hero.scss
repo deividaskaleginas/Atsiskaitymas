@@ -1,0 +1,45 @@
+.section-hero {
+  position: relative;
+  padding: 0 0 0 2rem;
+
+  .hero-text-box {
+    max-width: 75%;
+    z-index: 1;
+
+    button {
+      margin: 2rem 0 0 0;
+    }
+  }
+
+  .hero-mobile-img {
+    position: absolute;
+    right: 0;
+    top: -5.56rem;
+
+    width: 60%;
+  }
+
+  .hero-desktop-img {
+    display: none;
+  }
+  @media (min-width: 90rem) {
+    width: 90rem;
+    margin: 8rem auto;
+    display: flex;
+
+    .hero-text-box {
+      h1 {
+        font-weight: 900;
+        font-size: 6rem;
+        line-height: 7.25rem;
+      }
+    }
+
+    .hero-mobile-img {
+      display: none;
+    }
+    .hero-desktop-img {
+      display: block;
+    }
+  }
+}

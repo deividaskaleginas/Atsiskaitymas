@@ -1,0 +1,64 @@
+.section-showcase {
+  margin: 0 0 5.75rem 0;
+  padding: 0 2rem;
+
+  @media (min-width: 90rem) {
+    width: 90rem;
+    margin: 0 auto;
+  }
+
+  p {
+    color: var(--hero-paragraph-dark-color);
+
+    span {
+      text-decoration: underline;
+    }
+  }
+
+  .showcase-boxs {
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+
+    @media (min-width: 90rem) {
+      justify-content: center;
+      gap: 5rem;
+    }
+  }
+
+  .showcase-box {
+    display: flex;
+    flex-direction: column;
+    border-radius: 3rem;
+    min-width: 17.5rem;
+    min-height: 18.125rem;
+
+    .box-img {
+      img {
+        max-width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+      }
+    }
+    .box-info {
+      padding: 1.5rem;
+      border-bottom-right-radius: 1rem;
+      border-bottom-left-radius: 1rem;
+      background-color: var(--showcase-background-color);
+
+      .description-box {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .mid {
+        margin: 1rem 0;
+      }
+
+      .price-box {
+        display: flex;
+        gap: 0.5rem;
+      }
+    }
+  }
+}
